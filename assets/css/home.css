@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+@import url('nav.css');
+@import url('burgerButton.css');
+@import url('cards.css');
 
 *,:after,:before{
     padding: 0;
@@ -15,7 +18,7 @@ a:hover{
 
 
 /* ---------------------------------        NAVBAR          ---------------------------------   */
-nav{
+/* nav{
     background: white;
     position: fixed;
     left: 0;
@@ -133,10 +136,10 @@ nav ul li{
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
-}
+} */
 /* ---------------------------------         BURGER BUTTON          ---------------------------------   */
 
-  .burger{
+  /* .burger{
     z-index: 1;
     position: fixed;
     top: 28px;
@@ -191,7 +194,7 @@ nav ul li{
     -o-transform: rotateZ(-45deg) translate(5px, -7px);
 }
 
-
+ */
 
 
 
@@ -206,7 +209,7 @@ main{
     margin-top: 90px;
 } 
 
-
+/* 
 .cards{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -264,7 +267,7 @@ article span a{
 }
 article a{
     text-align: right;
-}
+} */
 
 
 
@@ -373,6 +376,7 @@ footer{
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            overflow-y: scroll;
         }
 
 }

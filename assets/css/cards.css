@@ -1,0 +1,59 @@
+
+.cards{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 700px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+article{
+    position: relative;
+    border: 1px solid #cecece;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 500px;
+    height: 570px;
+    margin: 5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+article h2{
+    font-size: 25px;
+}
+article p{
+    text-indent: 20px;
+    padding: 5px 3px;
+    text-align: justify;
+    max-height: 100px;
+    height: 100%;
+    overflow: hidden;
+    font-size: 13px;
+}
+article span{
+    text-align: right;
+    margin-bottom: 3px;
+}
+article span a{
+    background: #e9e9e9;
+    border-radius: 3px;
+    padding: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    height: 15px;
+}
+article a{
+    text-align: right;
+}

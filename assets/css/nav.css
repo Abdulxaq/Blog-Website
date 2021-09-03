@@ -1,0 +1,119 @@
+nav{
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    font-family: 'STIX Two Math', serif;
+    z-index: 1;
+    box-shadow: 0 0 10px rgb(174, 174, 174);
+}
+nav h1 a{
+    font-size: 35px;
+    color: black;
+    font-weight: 400;
+}
+nav ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li:last-child{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+nav ul li:last-child i{
+    margin: 5px 0 0 10px;
+}
+nav ul li{
+    position: relative;
+}
+.navLink{
+    position: relative;
+    padding: 5px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.navLink:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0);
+    transform: skewX(20deg) scaleX(0);
+    -webkit-transform: skewX(20deg) scaleX(0);
+    -moz-transform: skewX(20deg) scaleX(0);
+    -ms-transform: skewX(20deg) scaleX(0);
+    -o-transform: skewX(20deg) scaleX(0);
+        transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.navLink:hover{
+    color: white;
+    background: rgba(114, 34, 34, 0);
+}
+.navLink:hover:after{
+    transform: skewX(20deg) scaleX(1);
+    -webkit-transform: skewX(20deg) scaleX(1);
+    -moz-transform: skewX(20deg) scaleX(1);
+    -ms-transform: skewX(20deg) scaleX(1);
+    -o-transform: skewX(20deg) scaleX(1);
+    transform-origin: left;
+}
+.follow{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -10px;
+    top: 36px;
+    box-shadow: 0 5 5px rgb(160, 160, 160);
+    z-index: 10;
+    width: auto;
+    padding: 5px;
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.follow li a{
+    display: flex;
+}
+.follow li i{
+    margin-right: 5px ;
+}
+.navFollow:hover .follow{
+    top: 46px;
+    max-height: 200px;
+    overflow: unset;
+}
+#navLinks{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
